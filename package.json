@@ -1,0 +1,12 @@
+{
+  "name": "week1-se",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "node dist/grade.js",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
