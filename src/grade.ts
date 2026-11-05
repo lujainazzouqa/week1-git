@@ -3,7 +3,7 @@ type GradeResult = {
     letter: string;
 };
 
-function calculateGrade(scores: number[]): GradeResult {
+export function calculateGrade(scores: number[]): GradeResult  {
     const total = scores.reduce((sum, score) => sum + score, 0);
     const percentage = total / scores.length;
 
@@ -24,4 +24,3 @@ function calculateGrade(scores: number[]): GradeResult {
     return { percentage, letter };
 }
 
-console.log(calculateGrade([90, 85, 95]));

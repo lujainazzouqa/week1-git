@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-const PORT = 3000;
+
 
 // Middleware
 app.use(cors());
@@ -52,7 +52,4 @@ app.use((err: any, req: any, res: any, next: any) => {
   res.status(500).json({ error: "Internal Server Error" });
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+export default app;

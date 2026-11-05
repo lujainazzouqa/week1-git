@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "test": "node dist/grade.js",
+    "test": "vitest run",
     "dev": "tsc --watch"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "vitest": "^5.1.0"
   }
 }
